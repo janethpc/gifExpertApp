@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ProperTypes from 'prop-types';
+import '../components/addCategory.css'; 
 
 export const AddCategory = ({ onNewCategory }) => {
 
@@ -18,16 +19,17 @@ export const AddCategory = ({ onNewCategory }) => {
     }
 
   return (
-    
-    <form onSubmit={ onSubmit }>
+    <>
+    <form onSubmit={ onSubmit } className="input-field">
         <input
         type="text"
-        placeholder="Buscar Gif"
         value={inputValue}
         onChange={ onInputChange}
         />
+        <label>Buscar Gif</label>
     </form>
     
+    </>
   )
 }
 

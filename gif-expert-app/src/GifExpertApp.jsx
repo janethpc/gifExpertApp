@@ -1,6 +1,7 @@
 import { useState } from "react"
 import {AddCategory} from './components/AddCategory.jsx'
 import { GifGrid } from "./components/GifGrid.jsx"
+import '../src/gifApp.css'
 
 export const GifExpertApp = () => {
 
@@ -16,7 +17,10 @@ export const GifExpertApp = () => {
   return (
    <>
     {/** titulo */}
-       <h1> Gif Expert App By JanethPC </h1>
+      <div className="texto-encabezado text-center">
+        <h1 className="titulo"> Gif Expert App </h1>
+        <span className="titulo-pink-neon texto-regular">By JanethPC</span>
+      </div>
 
        {/** Input */}
        <AddCategory 
