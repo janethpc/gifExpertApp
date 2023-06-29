@@ -7,7 +7,7 @@ export const GifItem = ({title, url}) => {
     <>
     <div className="card">
         <Image src={url} alt={title} thumbnail/>
-        <p>{title}</p>
+        <p className='text-center'>{title}</p>
     </div>
             
     </>

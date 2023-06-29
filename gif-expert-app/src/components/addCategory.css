@@ -1,6 +1,13 @@
+*{
+    color: #112fa9;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
 .input-field{
     position: relative;
 }
+
 
 .input-field input{
     width: 100%;
@@ -12,6 +19,8 @@
     background: transparent;
     color: #5130c5;
     outline: none;
+    border-bottom: 2px solid #5130c5;
+    caret-color:black;
 }
 
 .input-field label{
@@ -23,6 +32,7 @@
     font-size: 19px;
     pointer-events: none;
     transition: 2s;
+    background-color: white;
 }
 
 input:focus ~ label {

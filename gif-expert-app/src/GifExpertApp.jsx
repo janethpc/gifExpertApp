@@ -17,10 +17,12 @@ export const GifExpertApp = () => {
   return (
    <>
     {/** titulo */}
-      <div className="texto-encabezado text-center">
+      <div className="texto-encabezado text-center" id="title">
         <h1 className="titulo"> Gif Expert App </h1>
-        <span className="titulo-pink-neon texto-regular">By JanethPC</span>
+        <span className="texto-encabezado titulo-pink-neon texto-regular">By JanethPC</span>
       </div>
+
+      <br/>
 
        {/** Input */}
        <AddCategory 
@@ -29,13 +31,16 @@ export const GifExpertApp = () => {
        />
 
        {/**Listado de gif */}
-       
+       <br/>
         { categories.map(category => {
             return (
+              <>
+              <br/>
               <GifGrid 
                 key={category}
                 category={category}  
               />
+              </>
             )
         }) }
        
