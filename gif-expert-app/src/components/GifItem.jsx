@@ -1,15 +1,18 @@
-import Image from 'react-bootstrap/Image';
-
-
+import PropTypes  from "prop-types"
 
 export const GifItem = ({title, url}) => {
   return (
     <>
     <div className="card">
-        <Image src={url} alt={title} thumbnail/>
+        <img src={url} alt={title} />
         <p className='text-center'>{title}</p>
     </div>
             
     </>
   )
+}
+
+GifItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
 }
